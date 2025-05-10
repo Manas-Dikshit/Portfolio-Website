@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRD Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo" class="preloader-logo">
+        </div>
+        <div class="loading-bar">
+            <div class="loading-progress"></div>
+        </div>
+    </div>
+
+    <!-- Sound Toggle -->
+    <div class="sound-toggle">
+        <i class="fas fa-volume-mute"></i>
+        <div class="volume-slider">
+            <input type="range" min="0" max="1" step="0.1" value="0" class="volume-control">
+        </div>
+    </div>
+
+    <!-- Theme Panel -->
+    <div class="theme-panel">
+        <div class="theme-panel-toggle">
+            <i class="fas fa-palette"></i>
+        </div>
+        <div class="theme-options">
+            <h4>Choose Theme</h4>
+            <div class="theme-colors">
+                <button class="theme-color" data-theme="dark-theme" style="background-color: #1a1a1a"></button>
+                <button class="theme-color" data-theme="light-theme" style="background-color: #ffffff"></button>
+                <button class="theme-color" data-theme="blue-theme" style="background-color: #0a192f"></button>
+                <button class="theme-color" data-theme="purple-theme" style="background-color: #2d1950"></button>
+                <button class="theme-color" data-theme="green-theme" style="background-color: #0f2620"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo" class="logo-image">
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="nav-link active-link"><span class="nav-number">01.</span>Home</a>
+            <a href="#about" class="nav-link"><span class="nav-number">02.</span>About</a>
+            <a href="#projects" class="nav-link"><span class="nav-number">03.</span>Projects</a>
+            <a href="#contact" class="nav-link"><span class="nav-number">04.</span>Contact</a>
+            <div class="theme-toggle">
+               <i class="fas fa-sun"></i>
+               <i class="fas fa-moon active"></i>
+            </div>
+            <div class="menu-toggle" aria-label="Toggle extended menu" aria-expanded="false">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="extended-menu">
+                    <a href="#education" class="nav-link">Education</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#achievements" class="nav-link">Achievements</a>
+                    <a href="#research" class="nav-link">Research</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="home-section">
+        <div class="content">
+            <div class="text-content">
+                <div class="greeting reveal-text">
+                    <span class="code-tag">&lt;Hiii/&gt;</span>
+                </div>
+                <h1 class="name reveal-text">I'm <span class="highlight">MRD</span></h1>
+                <div class="typing-text"></div>
+                <button class="download-cv">
+                    <span class="button-text">Download Resume</span>
+                    <i class="fas fa-download"></i>
+                </button>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/manas-ranjan-dikshit" class="social-icon" target="_blank" rel="noopener">
+                        <i class="fab fa-linkedin"></i>
+                        <span class="social-tooltip">LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/Manas-Dikshit" class="social-icon" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i>
+                        <span class="social-tooltip">GitHub</span>
+                    </a>
+                    <a href="https://leetcode.com/manas-ranjan-dikshit" class="social-icon" target="_blank" rel="noopener">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256" fill="currentColor">
+                          <path fill="#FFA116" d="M147.57 22.16L104.74 64.99l-33.56 33.56a12 12 0 1 0 17 17l28.54-28.54 42.83-42.83a12 12 0 1 0-17-17"/>
+                          <path fill="#000000" d="M195.46 105.27a12 12 0 0 0-17 17l22.77 22.76-22.77 22.77a12 12 0 1 0 17 17l31.36-31.36a12 12 0 0 0 0-17z"/>
+                          <path fill="#292D32" d="M157.83 146.41l-42.83 42.83-28.54 28.54a12 12 0 1 0 17 17l33.56-33.56 42.83-42.83a12 12 0 0 0-17-17"/>
+                          <path fill="#292D32" d="M140.47 111.1a12 12 0 0 0-17 0L78.3 156.27a12 12 0 1 0 17 17l45.17-45.17a12 12 0 0 0 0-17"/>
+                        </svg>
+                        <span class="social-tooltip">LeetCode</span>
+                    </a>
+                    <a href="https://www.instagram.com/manasss01_?igsh=aXYxZXdjN3IwMzY3" class="social-icon" target="_blank" rel="noopener">
+                        <i class="fab fa-instagram"></i>
+                        <span class="social-tooltip">Instagram</span>
+                    </a>
+                </div>
+            </div>
+            <div class="profile-image">
+                <img src="manas.jpg" alt="Profile">
+                <div class="blob-animation"></div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow-scroll">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="section-header">
+            <span class="section-number">02</span>
+            <h2 class="reveal-text">About Me</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="MRD on Bike.jpg" alt="About">
+                <div class="image-effect"></div>
+            </div>
+            <div class="about-text">
+                <p class="reveal-text">🚀 I'm <span class="highlight">Manas Ranjan Dikshit</span>, an Aspiring Full Stack Developer and Java & Spring Boot Enthusiast, currently pursuing B.Tech CSE at SUIIT. Passionate about building scalable applications, I specialize in Java (Spring Boot, Hibernate, REST APIs) 💻, React ⚛️, HTML, CSS, JavaScript 🎨, MySQL, and MongoDB 🛠️.
+                
+                As a Web Development Intern at ZIDIO, I optimized backend performance and developed RESTful APIs, while my open-source contributions to Apache CloudStack, Apache Pinot, Apache ShardingSphere, and OpenAI have refined my skills in scalable software development.
+                
+               A HackVerse Hackathon Winner 🏆, I built an AI-driven health & fitness platform 🤖, and my achievements include being a National Debate Champion 🏅 (85+ first-place wins), Best Open-Source Contributor (Apache Software Foundation), and Google Cloud Skill Boost Top Performer 🌟.
+                
+                Beyond coding, I am a motivational speaker 🎤, student ambassador 📢, and leader, conducting workshops and seminars that drive impact. My goal is to innovate, contribute to open-source, and inspire future tech leaders 🚀.</p>
+                
+                <div class="signature">
+                    <span class="sign">MRD</span>
+                    <span class="sign-subtitle">- Software Engineer</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education-section">
+        <div class="section-header">
+            <span class="section-number">03</span>
+            <h2 class="reveal-text">Education Journey</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="education-cards">
+            <div class="education-card tilt-card">
+                <div class="school-image">
+                    <img src="SUIIT.jpeg" alt="University">
+                </div>
+                <div class="education-details">
+                    <h3>BTech</h3>
+                    <h4>Sambalpur University Institute Of Information Technology, Burla</h4>
+                    <p class="grade"><i class="fas fa-star"></i> 9.3 CGPA</p>
+                    <p>Computer Science Engineering</p>
+                    <div class="card-shine"></div>
+                </div>
+            </div>
+            <div class="education-card tilt-card">
+                <div class="school-image">
+                    <img src="KSE.jpg" alt="College">
+                </div>
+                <div class="education-details">
+                    <h3>Higher Secondary</h3>
+                    <h4>KSE Higher Secondary School, Keonjhar</h4>
+                    <p class="grade"><i class="fas fa-star"></i> 91%</p>
+                    <p>+2 Science with PCM <br> Activities and societies: Students secretary, District topper in CHSE-24, champion of all odisha science exhibition.</p>
+                    <div class="card-shine"></div>
+                </div>
+            </div>
+            <div class="education-card tilt-card">
+                <div class="school-image">
+                    <img src="SSVM.jpg" alt="School">
+                </div>
+                <div class="education-details">
+                    <h3>High School</h3>
+                    <h4>Saraswati Shishu Bidya Mandir Keonjhar Garh, Keonjhar</h4>
+                    <p class="grade"><i class="fas fa-star"></i> 95%</p>
+                    <p>Matriculation <br>Activities and societies: National level Debate Champion, Student president, ranked 1 in state scholarship exam, pathani samanta scholarship.</p>
+                    <div class="card-shine"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience-section">
+        <div class="section-header">
+            <span class="section-number">04</span>
+            <h2 class="reveal-text">Professional Journey</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="experience-timeline">
+            <div class="experience-item">
+                <div class="experience-content">
+                    <div class="experience-date">2024-Present</div>
+                    <h3>Open-Source Contributor</h3>
+                    <h4>Github</h4>
+                    <p>Contributing to open-source projects including Apache CloudStack, Apache Pinot, and Apache ShardingSphere. Focused on scalable backend solutions and cloud infrastructure.</p>
+                    <div class="skills-used">
+                        <i class="fab fa-java" title="Java"></i>
+                        <i class="fab fa-react" title="React"></i>
+                        <i class="fab fa-docker" title="Docker"></i>
+                        <i class="fa-solid fa-cloud" title="Cloud"></i>
+                        <i class="fa-solid fa-database" title="Database"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="experience-item">
+                <div class="experience-content">
+                    <div class="experience-date">2025 Jan-Feb</div>
+                    <h3>Web-Development Intern</h3>
+                    <h4>Zidio Development pvt. ltd.</h4>
+                    <p>Optimized backend performance and developed RESTful APIs. Worked on frontend applications using React and modern JavaScript.</p>
+                    <div class="skills-used">
+                        <i class="fab fa-html5" title="HTML5"></i>
+                        <i class="fab fa-css3" title="CSS3"></i>
+                        <i class="fab fa-js" title="JavaScript"></i>
+                        <i class="devicon-spring-plain colored" title="Spring"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="experience-item">
+                <div class="experience-content">
+                    <div class="experience-date">2024 Sept-Dec</div>
+                    <h3>Student Ambassador</h3>
+                    <h4>MYNEP-Govt. of India</h4>
+                    <p>Represented educational initiatives, conducted workshops, and facilitated community engagement for government educational programs.</p>
+                    <div class="skills-used">
+                        <i class="fa-solid fa-tower-broadcast" title="Communication"></i>
+                        <i class="fa-solid fa-person-chalkboard" title="Teaching"></i>
+                        <i class="fa-brands fa-teamspeak" title="Team Leadership"></i>
+                        <i class="fa-solid fa-server" title="Technical Support"></i>
+                        <i class="fa-solid fa-school" title="Education"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <div class="section-header">
+            <span class="section-number">05</span>
+            <h2 class="reveal-text">Professional Skills</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="skills-container">
+            <!-- Programming Languages -->
+            <div class="skill-category">
+                <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                <div class="skill-bars">
+                    <div class="skill-bar">
+                        <span class="skill-name"><i class="fa-brands fa-java"></i> Java</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 0%" data-width="90%"></div>
+                        </div>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <span class="skill-name"><i class="fa-brands fa-c"></i> C</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 0%" data-width="85%"></div>
+                        </div>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <span class="skill-name"><i class="fa-brands fa-js"></i> JavaScript</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 0%" data-width="80%"></div>
+                        </div>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Web Technologies -->
+            <div class="skill-category">
+                <h3><i class="fas fa-globe"></i> Web Technologies</h3>
+                <div class="skill-bars">
+                    <div class="skill-bar">
+                        <span class="skill-name"><i class="fa-brands fa-react"></i> React</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 0%" data-width="85%"></div>
+                        </div>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <span class="skill-name"><i class="fa-brands fa-node-js"></i> Node.js</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 0%" data-width="80%"></div>
+                        </div>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <span class="skill-name"><i class="fa-solid fa-code"></i> HTML/CSS</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 0%" data-width="90%"></div>
+                        </div>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <span class="skill-name"><i class="devicon-spring-plain colored"></i> Spring Boot</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 0%" data-width="90%"></div>
+                        </div>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Tools & Technologies -->
+            <div class="skill-category">
+                <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
+                <div class="skill-bars">
+                    <div class="skill-bar">
+                        <span class="skill-name"><i class="fa-brands fa-docker"></i> Docker</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 0%" data-width="75%"></div>
+                        </div>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <span class="skill-name"><i class="fa-brands fa-git-alt"></i> Git</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 0%" data-width="85%"></div>
+                        </div>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <span class="skill-name"><i class="fa-brands fa-aws"></i> AWS</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 0%" data-width="70%"></div>
+                        </div>
+                        <span class="skill-percentage">70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <span class="skill-name"><i class="fa-brands fa-github"></i> Github</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 0%" data-width="90%"></div>
+                        </div>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <span class="skill-name"><i class="fa-solid fa-palette"></i> Canva</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 0%" data-width="90%"></div>
+                        </div>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects" class="projects-section">
+        <div class="section-header">
+            <span class="section-number">06</span>
+            <h2 class="reveal-text">Featured Projects</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card tilt-card">
+                <div class="project-image">
+                    <img src="Screenshot 2025-02-20 015618.png" alt="Project 1">
+                    <div class="project-overlay">
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Django</span>
+                            <span>AI</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <h3>Neutrino AI</h3>
+                    <p>Neutrino AI is an AI-powered dual chatbot system designed to provide personalized mental health support and nutrition guidance. It features two intelligent chatbots: a Mental Health Chatbot, which uses sentiment analysis to offer emotional support, mindfulness exercises, and stress relief tips, and a Nutrition & Diet Chatbot, which provides personalized meal plans, calorie tracking, and fitness suggestions.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Manas-Dikshit/Byte-Crafters" class="project-link" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live
+                        </a>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </div>
+            <div class="project-card tilt-card">
+                <div class="project-image">
+                    <img src="Screenshot 2025-04-08 012800.png" alt="Project 2">
+                    <div class="project-overlay">
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>AI Tools</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <h3>Mountain Dew</h3>
+                    <p>Mountain Dew is a website for the help of students. This website has features of Chatbot for students, Short notes generator, Quiz maker, Career guidance, homework solver, pomodoro timer, flashcard generator & many helping AI systems for students.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Manas-Dikshit/Student-Helping-Site" class="project-link" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live
+                        </a>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="achievements-section">
+        <div class="section-header">
+            <span class="section-number">07</span>
+            <h2 class="reveal-text">Achievements & Certifications</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="achievements-grid">
+            <div class="achievement-card tilt-card">
+                <div class="achievement-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <h3>HackVerse Hackathon Winner</h3>
+                <p>First place in national-level hackathon for developing an AI-driven health & fitness platform.</p>
+                <div class="card-shine"></div>
+            </div>
+            <div class="achievement-card tilt-card">
+                <div class="achievement-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <h3>Best Open-Source Contributor</h3>
+                <p>Recognized by Apache Software Foundation for significant contributions to multiple projects.</p>
+                <div class="card-shine"></div>
+            </div>
+            <div class="achievement-card tilt-card">
+                <div class="achievement-icon">
+                    <i class="fas fa-medal"></i>
+                </div>
+                <h3>National Debate Champion</h3>
+                <p>85+ first-place wins in national-level debate competitions.</p>
+                <div class="card-shine"></div>
+            </div>
+            <div class="achievement-card tilt-card">
+                <div class="achievement-icon">
+                    <i class="fa-solid fa-hockey-puck"></i>
+                </div>
+                <h3>Best Performer in AI-Hackathon</h3>
+                <p>Made a Project On Healthcare and got the award of Best performer Among 40 teams.</p>
+                <div class="card-shine"></div>
+            </div>
+            <div class="achievement-card tilt-card">
+                <div class="achievement-icon">
+                    <i class="fa-solid fa-tag"></i>
+                </div>
+                <h3>Best Leader & Efficient Leadership</h3>
+                <p>National prize on Leadership in School level.</p>
+                <div class="card-shine"></div>
+            </div>
+            <div class="achievement-card tilt-card">
+                <div class="achievement-icon">
+                    <i class="fa-solid fa-ankh"></i>
+                </div>
+                <h3>District Topper in +2 Science</h3>
+                <p>Scored only one student in all over the district as 10 CGPA</p>
+                <div class="card-shine"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="section-header">
+            <span class="section-number">08</span>
+            <h2 class="reveal-text">Get In Touch</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Email</h3>
+                        <p>manasdikshit48@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Phone</h3>
+                        <p>+91-933778805</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Location</h3>
+                        <p>Odisha, India</p>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860734.895138166!2d82.7436483871365!3d20.301388936412344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a226aece9af3bfd%3A0x133625caa9cea81f!2sOdisha!5e0!3m2!1sen!2sin!4v1682236833261!5m2!1sen!2sin" 
+                            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        
+            <!-- Using FormSubmit  -->
+            <form class="contact-form" id="contactForm" action="https://formsubmit.co/manasdikshit48@gmail.com" method="POST">
+                <div class="form-group">
+                    <div class="form-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <input type="text" name="name" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                    <div class="form-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <div class="form-icon">
+                        <i class="fas fa-message"></i>
+                    </div>
+                    <textarea name="message" placeholder="Message" required></textarea>
+                </div>
+                <input type="hidden" name="_captcha" value="false">
+                <button type="submit" class="submit-btn">
+                    <span>Send Message</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+      
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="logo.png" alt="Logo" class="footer-logo-image">
+                <p>MRD Portfolio</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/manas-ranjan-dikshit" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Manas-Dikshit" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/manasss01_?igsh=aXYxZXdjN3IwMzY3" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 MRD. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <button class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Success Toast Notification -->
+    <div class="toast-container"></div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.0/dist/vanilla-tilt.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="scripts.js"></script>
+    <script src="animations.js"></script>
+    <script src="sounds.js"></script>
+    <script src="theme.js"></script>
+</body>
+</html>
